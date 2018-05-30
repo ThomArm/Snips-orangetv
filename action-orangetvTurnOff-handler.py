@@ -41,7 +41,7 @@ def action_wrapper(hermes, intentMessage, conf):
     """ 
     if len(intentMessage.slots.house_room):
     	for room in intentMessage.slots.house_room:
-    		snipsorange.light_off(room)
+    		snipsorange.light_off("chambre")
     else:
     	snipsorange.light_off(None)
 
