@@ -43,18 +43,18 @@ def action_wrapper(hermes, intentMessage, conf):
           for channel in intentMessage.slots.Channel:
             channel=str(channel).lower()
             if ((channel=='tf1') or (channel=='un')or (channel=='1') or (channel=='chaine1')):
-              snipsorange.light_on_set("blue",254,"chambre")
+                snipsorange.light_on_set("blue",254,"chambre")
             if ((channel=='france 2') or (channel=='deux')or (channel=='fr2') or (channel=='chaine2')):
-              snipsorange.light_on_set("red",254,"chambre")
+                snipsorange.light_on_set("red",254,"chambre")
             if ((channel=='france 3') or (channel=='trois')or (channel=='fr3') or (channel=='chaine3')):
-              snipsorange.light_on_set("green",254,"chambre")
+                snipsorange.light_on_set("green",254,"chambre")
             if ((channel=='canal') or (channel=='c+')or (channel=='canal plus') or (channel=='quatre') or (channel=='chaine4')):
-              snipsorange.light_on_set("black",254,"chambre")
+                snipsorange.light_on_set("black",254,"chambre")
             if ((channel=='arte') or (channel=='cinq')or (channel=='chaine5')):
-              snipsorange.light_on_set("yellow",254,"chambre")
+                snipsorange.light_on_set("yellow",254,"chambre")
             if ((channel=='m6') or (channel=='six')or (channel=='chaine6')):
-              snipsorange.light_on_set("pink",254,"chambre")
-        else:
+                snipsorange.light_on_set("pink",254,"chambre")
+    else:
           snipsorange.light_on_set("white",254,"chambre")
 
     current_session_id = intentMessage.session_id
